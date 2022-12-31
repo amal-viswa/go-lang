@@ -143,3 +143,9 @@ func main() {
 	}
 
 /*
+
+FROM alpine:latest
+
+ENV MYVAR=$VAR
+RUN apk update
+CMD printenv | grep MYVAR
